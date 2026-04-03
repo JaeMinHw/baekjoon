@@ -1,5 +1,12 @@
-# N = int(input())
+data = [
+    ["apple banana cherry", "dog cat"],
+    ["red blue", "sunny rainy"]
+]
 
-# N15 = round(N * 0.15)
+# Split -> Reverse -> Join back into a string
+result = [
+    [" ".join(s.split()[::-1]) for s in row] 
+    for row in data
+]
 
-print(round(0.5))
+print(result)
