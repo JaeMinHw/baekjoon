@@ -19,7 +19,8 @@ for i in range(N):
             #     rank[j] -= 1
             elif x_arr[i] < x_arr[j] and y_arr[i] > y_arr[j] :
                 rank[i] -= 1
-
+            elif x_arr[i] == x_arr[j] or y_arr[i] == y_arr[j]:
+                rank[i] -= 1
 
 flag = 0        
 for i in range(N):
