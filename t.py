@@ -1,1 +1,16 @@
-print(min(1, 64))
+def solution(s):
+    answer = 0
+    arr = [] * len(s)
+    s = s.split()
+    
+    
+    
+    for i in range(len(s)):
+        if s[i] != "Z":
+            answer += int(s[i])
+        else :
+            answer -= int(s[i-1])
+    return answer
+
+
+print(solution("10 20 30 40"))
