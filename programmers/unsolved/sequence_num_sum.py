@@ -38,4 +38,10 @@ def solution(sequence, k):
     return answer
 
 
-print(solution([1, 2, 3, 4,5], 7))
+
+def solution(num, total):
+    answer = []
+    
+    return answer
+
+print(solution(5, 15))
